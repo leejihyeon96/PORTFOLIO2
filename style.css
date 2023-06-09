@@ -13,14 +13,14 @@ p{
     margin: 0;
 }
 .all-br{
-    width: 1920px; height: 7070px;
+    width: 100%; height: 7070px;
     background-color: rgba(0, 0, 0, .95);
     overflow: hidden;
     left: 0;right: 0;margin: auto;
 }
 .all-br::after{
     content: "";
-    height: 7070px;width: 1920px;
+    height: 7070px;width: 100%;
     position: absolute;
     background: url(./jpg/cement-texture.jpg)center;
     background-repeat: repeat;
@@ -56,7 +56,7 @@ p{
 
 .line{
     position: relative;
-    width: 70vw; height: 200px;
+    width: 1080px; height: 200px;
     background:url(./jpg/중앙\ 선.png)no-repeat center;
     background-size: cover;
     top: 300px;
@@ -74,7 +74,7 @@ p{
     position: relative;
     background:url(./jpg/중앙\ 선.png)no-repeat center;
     background-size: cover;
-    width: 70vw; height: 200px;
+    width: 1080px; height: 200px;
     top: -400px;
     left: 0px; right: 0; margin: auto;
 }
@@ -90,7 +90,7 @@ p{
     position: relative;
     background:url(./jpg/중앙\ 선.png)no-repeat center;
     background-size: cover;
-    width: 70vw; height: 200px;
+    width: 1080px; height: 200px;
     top: -400px;
     left: 0px; right: 0; margin: auto;
 }
@@ -106,7 +106,7 @@ p{
     position: relative;
     background:url(./jpg/중앙\ 선.png)no-repeat center;
     background-size: cover;
-    width: 70vw; height: 200px;
+    width: 1080px; height: 200px;
     top: -100px;
     left: 0px; right: 0; margin: auto;
 }
@@ -151,7 +151,7 @@ p{
 
 .main-topbar{
     position: fixed;
-    width: 1920px; height: 50px;
+    width: 100%; height: 50px;
     background:linear-gradient(to bottom,rgba(46, 44, 38, 0.7),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3),rgba(0,0,0,0));
     backdrop-filter: blur(50px);
     text-align: center;
@@ -167,10 +167,19 @@ p{
 .main-topbar2{
     display: none;
 }
+.in{
+    position: fixed;
+    color: rgb(224, 255, 206);
+    top: 50px;
+    width: 100vw;height: 25px;
+    background-color: rgba(255, 191, 95, 0.3);
+    left: 0;right: 0;margin: auto;
+}
 
 .main{
     position: relative;
-    width: 1920px; height: 1080px;
+    width: 100%; height: 1080px;
+    left: 0;right: 0;margin: auto;
     overflow: hidden;
 }
 .main-img{
@@ -178,16 +187,17 @@ p{
     background:linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5),rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./jpg/Rectangle\ 1.jpg)no-repeat center;
     background-size: cover;
     width: 100%; height: 1080px;
+    left: 0;right: 0;margin: auto;
 }
 .logo-box{
     position: absolute;
     background: url(./jpg/붉은사막.png)no-repeat center;
     background-size: cover;
-    width: 100%; height: 300px;
+    width: 1520px; height: 300px;
+    left: 0;right: 0;margin: auto;
     top: -100px;
     animation: down 1s ease-in forwards;
     opacity: 0;
-
 }
 @keyframes down {
     from{
@@ -206,11 +216,12 @@ p{
 .gameplay-bg-r{
     position: absolute;
     top: 660px;
+    left: 0;right: 0;margin: auto;
     background: url(./jpg/붉-game-play-빛.png)no-repeat center;
     background-size: 1200px;
     width: 100%;height: 450px;
     display: none;
-    animation: 투명 1s ease-in forwards;
+    animation: 투명 .5s ease-in forwards;
     opacity: 0;
 }
 .gameplay-bg{
@@ -219,8 +230,9 @@ p{
     background: url(./jpg/붉-game-play.png)no-repeat center ;
     background-size: 1200px;
     width: 100%;height: 450px;
+    left: 0;right: 0;margin: auto;
     opacity: 0;
-    animation: 투명 1s ease-in forwards;
+    animation: 투명 .5s ease-in forwards;
 
 }
 .play-text{
@@ -237,7 +249,7 @@ p{
     font-size: 22px;
     font-weight: 700;
     cursor: pointer;
-    animation: 투명 1s ease-in forwards;
+    animation: 투명 .5s ease-in forwards;
     opacity: 0;
     
 }
@@ -249,14 +261,9 @@ p{
         opacity: .7;
     }
 }
-.main-br{
-    position: absolute;
-    background: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,.5),#000,rgba(0,0,0,.5),rgba(0,0,0,0));
-    width: 100%; height: 300px;
-    top: 930px;
-}
+
 .main2{
-    width: 90vw; height: 1500px;
+    width: 100vw; height: 1500px;
     left: 0; right: 0; margin: auto;
     overflow: hidden;
 }
@@ -275,7 +282,8 @@ p{
     background: url(./jpg/문양1.png)no-repeat center;
     background-size:1000px;
     width: 500px; height: 700px;
-    left: 1195px; top: 1470px;
+    top: 1900px;
+    left: 0;right: 0;margin: auto;
     color: rgb(155, 155, 155);
 }
 .story-T{
@@ -389,7 +397,7 @@ p{
 
 .main3{
     position: relative;
-    width: 80vw; height: 1200px;
+    width: 1320px; height: 1200px;
     overflow: hidden;
     top: -300px;
     left: 0;right: 0;margin: auto;
@@ -397,7 +405,7 @@ p{
 .main3-box1{
     position: absolute;
     overflow: hidden;
-    width: 80vw; height: 30vh;
+    width: 1320px; height: 30vh;
     background: linear-gradient(to right,rgba(64, 64, 65, 0),rgba(98, 116, 117, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
     background-size: cover;
     animation: opacityAni 1s ease-in;
@@ -427,7 +435,7 @@ p{
 
 .sky1{
     position: absolute;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     left: 20%;
     background: url(./jpg/구름1.png)no-repeat center;
     background-size: cover;
@@ -435,7 +443,7 @@ p{
 }
 .sky2{
     position: absolute;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     left: 20%;
     background: url(./jpg/구름2.png)no-repeat center;
     background-size: cover;
@@ -444,7 +452,7 @@ p{
 
 .sky3{
     position: absolute;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     right: 20%;
     background: url(./jpg/구름3.png)no-repeat center;
     background-size: cover;
@@ -455,7 +463,7 @@ p{
     position: absolute;
     background: url(./jpg/dragon.png)no-repeat center;
     background-size: 1000px;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     left: 50%;
     transition: all 2.5s;
 }
@@ -475,7 +483,7 @@ p{
 }
 .main3-box2{
     position: absolute;
-    width: 80vw; height: 30vh;
+    width: 1320px; height: 300px;
     top: 290px;
     left: 0;right: 0;margin: auto;
     background: linear-gradient(to right,rgba(64, 64, 65, 0),rgba(98, 116, 117, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
@@ -489,12 +497,12 @@ p{
     position: absolute;
     background:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0)), url(./jpg/붉은사막-생활.jpg)no-repeat center;
     background-size: cover;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     top: 0px;
     transition: all 3s ease-in-out;
 }
 .bg1:hover{
-    width: 100vw; height: 100vh;
+    width: 1320px; height: 100vh;
     top: -500px;
     transition: all 3s ease-in-out;
 }
@@ -530,7 +538,7 @@ p{
 }
 .main3-box3{
     position: absolute;
-    width: 80vw; height: 30vh;
+    width: 1320px; height: 300px;
     top: 580px;
     left: 0;right: 0;margin: auto;
     background-color: aliceblue;
@@ -542,12 +550,12 @@ p{
     position: absolute;
     background: url(./jpg/넓은세계.jpg)no-repeat center;
     background-size: cover;
-    width: 100vw; height: 30vh;
+    width: 1320px; height: 300px;
     top: 0px;
     transition: all 3s ease-in-out;
 }
 .bg2:hover{
-    width: 100vw; height: 100vh;
+    width: 1320px; height: 100vh;
     top: -200px;
     transition: all 3s ease-in-out;
 }
@@ -573,6 +581,7 @@ p{
     top: -300px;
     width: 100%;height: 800px;
     background-color: #ff8c2e;
+    left: 0;right: 0;margin: auto;
 }
 .left-box{
     padding-top: 50px;
@@ -786,8 +795,9 @@ p{
 
 .main-footer{
     position: relative;
-    width: 1920px;height: 500px;
+    width: 100%;height: 500px;
     background-color: #333;
+    left: 0;right: 0;margin: auto;
 }
 .social-box{
     position: absolute;

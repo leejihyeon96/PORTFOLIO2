@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: .1;
+}
+html{
+    line-height: 1.15;
+}
+div{
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.bg{
+    width: 100%; height: 5000px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg::after{
+    content: '';
+    left: 0;right: 0;top: 0;bottom: 0;
+    position: absolute;
+    width: 100%;height: 5000px;
+    z-index: -1;
+    opacity: .9;
+    background:url(./jpg/패턴\ 철\ 텍스처.jpg)center;
+}
+
+.main-topbar{
+    position: fixed;
+    width: 100vw; height: 50px;
+    background:linear-gradient(to bottom,rgba(46, 44, 38, 0.7),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3),rgba(0,0,0,0));
+    backdrop-filter: blur(50px);
+    text-align: center;
+    z-index: 100;
+    border-bottom: 1px solid rgb(245, 218, 183)
+}
+
+.main-topbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+.main-topbar2{
+    display: none;
+}
+.menu{
+    position: absolute;
+    background: url(/jpg/menu-W.png)no-repeat center;
+    background-size: 80px;
+    width: 50px;height: 50px;
+    top: 2px;
+    cursor: pointer;
+}
+.user{
+    position: absolute;
+    background: url(/jpg/user-w.png)no-repeat center;
+    background-size: 30px;
+    width: 50px;height: 50px;
+    top: 0px;
+    cursor: pointer;
+}
+.horver-p{
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+    transition: all .3s;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.horver-p:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+.mouse{
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;height: 1000px;
+    transform: translate(-50%,-50%);
+    background: url(./jpg/데드스페이스-함선.png)no-repeat center;
+    background-size: 700px;
+    transition: all 25s;
+}
+.mouse2{
+    position: absolute;
+    z-index: 1000;
+    width: 3000px;height: 3000px;
+    transform: translate(-50%,-50%);
+    background: url(./jpg/데드스페이스-파편.png) center;
+    background-size: 1000px;
+    transition: all 30s;
+}
+.mouse3{
+    position: absolute;
+    z-index: 1000;
+    width: 3000px;height: 3000px;
+    background: url(./jpg/데드스페이스-파편2.png) center;
+    transform: translate(-50%,-50%);
+    background-size: 1000px;
+    transition: all 15s;
+    opacity: .5;
+}
+.mouse4{
+    position: absolute;
+    z-index: 1000;
+    width: 300px;height: 300px;
+    background: url(./jpg/데드스페이스-마커.png)no-repeat center;
+    background-size: 300px;
+    transition: all 10s;
+    animation-name: 빙글;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes 빙글 {
+    0%{
+        transform: rotate(0deg)
+        translate(-90%,-90%);
+    }
+    50%{
+        transform: rotate(180deg)
+        translate(-90%,-90%);
+    }
+    100%{
+        transform: rotate(360deg)
+        translate(-90%,-90%);
+    }
+}
+
+.main-bg{
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;height: 1080px;
+    background: url(./jpg/deadspace_우주.jpg)no-repeat center;
+    background-size: cover;
+}
+.deadspace-text{
+    position: absolute;
+    top: 5%;
+    width: 100vw;height: 100vh;
+    background: url(./jpg/데드스페이스-text_1.png)no-repeat center;
+    background-size: 100%;
+    z-index: 1000;
+    animation-name: 지직;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes 지직 {
+    0%{
+        opacity: 1;
+    }
+    49%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    79%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%{
+        opacity: 1;
+    }
+    82%{
+        opacity: 1;
+    }
+    83%{
+        opacity: 0;
+    }
+    84%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.deadspace-text2{
+    position: absolute;
+    top: 5%;
+    width: 100vw;height: 100vh;
+    background: url(./jpg/데드스페이스-text_2.png)no-repeat center;
+    background-size: 100%;
+    z-index: 1000;
+    animation-name: 지직2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes 지직2 {
+    0%{
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    51%{
+        opacity: 0;
+    }
+    79%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    81%{
+        opacity: 0;
+    }
+    82%{
+        opacity: 0;
+    }
+    83%{
+        opacity: 1;
+    }
+    84%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* 메인박스 1 */
+.main-box1{
+    position: relative;
+    top: 1080px;
+    width: 100%;height: 3000px;
+    background: url(./jpg/데드스페이스-창문.png)center;
+    background-size: 1700px;
+    background-repeat: repeat-y;
+
+}
+.glass{
+    position: absolute;
+    top: 1150px;
+    width: 100%;height: 3000px;
+    background: url(./jpg/데드스페이스-창문유리.jpg)center;
+    background-size: 1700px;
+    background-repeat: repeat-y;
+    opacity: .3;
+}
+
+.game-buy{
+    position: absolute;
+    width: 1600px;height: 800px;
+    background: url(./jpg/데드스페이스-게임구매.png)no-repeat center;
+    background-size: 1200px;
+    top: 180px;
+    left: 0;right: 0;margin: auto;
+}
+/* 메인박스 2 */
+.main-box2{
+    position: relative;
+    top: 1050px;
+    width: 100%;height: 3000px;
+    background: linear-gradient(to bottom, #000,#000,#111,#222);
+    left: 0;right: 0;margin: auto;
+}
+
+
+
+
