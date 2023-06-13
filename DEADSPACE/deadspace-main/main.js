@@ -202,13 +202,31 @@ if (value > 3900){
     issacani1.style.animation = `OpacityAni 1s ease-in forwards`
     issacani2.style.animation = `topani 1s ease-in forwards`
 }
+if (value > 6000){
+    if (innerWidth < 1280){
+        box2ani1.style.animation = `rightani 1s ease-in-out forwards`;
+        box2ani1_2.style.animation = `leftani 1s ease-in-out forwards`;
+    }
+}
 if (value > 6200){
     box2ani1.style.animation = `rightani 1s ease-in-out forwards`;
     box2ani1_2.style.animation = `leftani 1s ease-in-out forwards`;
 }
+if (value > 6400){
+    if (innerWidth < 1280){
+        box2ani2.style.animation = `leftani 1s ease-in-out forwards`;
+        box2ani2_2.style.animation = `rightani 1s ease-in-out forwards`;
+    }
+}
 if (value > 6800){
     box2ani2.style.animation = `leftani 1s ease-in-out forwards`;
     box2ani2_2.style.animation = `rightani 1s ease-in-out forwards`;
+}
+if (value > 7100){
+    if (innerWidth < 1280){
+        box2ani3.style.animation = `rightani 1s ease-in-out forwards`;
+        box2ani3_2.style.animation = `leftani 1s ease-in-out forwards`;
+    }
 }
 if (value > 7500){
     box2ani3.style.animation = `rightani 1s ease-in-out forwards`;
