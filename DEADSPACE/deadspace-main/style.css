@@ -1506,7 +1506,7 @@ p{
         top: 200px;
     }
     .deadspace1_2{
-        width: 100%;height: 30vh;
+        width: 100%;height: 200px;
         background: url(./jpg/deadspace1_2.png)no-repeat center;
         background-size: cover;
         left: 0;right: 0;margin: auto;
@@ -1800,10 +1800,10 @@ p{
         width: 100%;
     }
     .screenshot-text{
-        top: -700px;
+        top: -450px;
     }
     .slide-box{
-        top: -500px;
+        top: -300px;
         width: 100%; height: 1000px;
     }
     .slide-con{
@@ -1817,66 +1817,66 @@ p{
     .screenshot2{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(500px);
+        transform: translateX(100vw);
     }
     .screenshot3{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(1000px);
+        transform: translateX(200vw);
     }
     .screenshot4{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(1500px);
+        transform: translateX(300vw);
     }
     .screenshot5{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(2000px);
+        transform: translateX(400vw);
     }
     .screenshot6{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(2500px);
+        transform: translateX(500vw);
     }
     .screenshot7{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(3000px);
+        transform: translateX(600vw);
     }
     .screenshot8{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(3500px);
+        transform: translateX(700vw);
     }
     .screenshot9{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(4000px);
+        transform: translateX(800vw);
     }
     .screenshot10{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(4500px);
+        transform: translateX(900vw);
     }
     .screenshot11{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(5000px);
+        transform: translateX(1000vw);
     }
     .screenshot12{
         width: 500px;height: 400px;
         background-size: cover;
-        transform: translateX(5500px);
+        transform: translateX(1100vw);
     }
     .screen-btn{
-        top: 0px;
+        top: 200px;
     }
     .screen-btn button{
         width: 100px;height: 100px;
     }
     .screen-btn2{
-        top: 100px;
+        top: 400px;
     }
     .screen-btn2 button{
         width: 100px;height: 100px;

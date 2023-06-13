@@ -45,40 +45,77 @@ $('.story-btn3').on('click',function(){
 
 $('.screen2').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-65vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-100vw)')
+    }
 });
 $('.screen1').on('click',function(){
     $('.slide-con').css('transform', 'translateX(0vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(0vw)')
+    }
 });
 $('.screen3').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-130vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-200vw)')
+    }
 });
 $('.screen4').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-195vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-300vw)')
+    }
 });
 $('.screen5').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-260vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-400vw)')
+    }
 });
 $('.screen6').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-325vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-500vw)')
+    }
 });
 $('.screen7').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-390vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-600vw)')
+    }
 });
 $('.screen8').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-455vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-700vw)')
+    }
 });
 $('.screen9').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-520vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-800vw)')
+    }
 });
 $('.screen10').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-585vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-900vw)')
+    }
 });
 $('.screen11').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-650vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-1000vw)')
+    }
 });
 $('.screen12').on('click',function(){
     $('.slide-con').css('transform', 'translateX(-715vw)')
+    if (innerWidth < 1280){
+        $('.slide-con').css('transform', 'translateX(-1100vw)')
+    }
 });
+
 
 
 
