@@ -12,6 +12,7 @@ p{
     padding: 0;
     margin: 0;
 }
+
 /* 전체 배경 색 */
 .bg{
     width: 100%; height: 12800px;
@@ -19,14 +20,18 @@ p{
     overflow: hidden;
 }
 /* 메인 탑 바 */
+.main-topbar-max{
+    display: none;
+}
 .main-topbar{
     position: fixed;
-    width: 1920px; height: 50px;
+    width: 100%; height: 50px;
     background:linear-gradient(to bottom,rgba(46, 44, 38, 0.7),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3),rgba(0,0,0,0));
     backdrop-filter: blur(50px);
     text-align: center;
     z-index: 100;
-    border-bottom: 2px solid rgb(0, 0, 0)
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: all 1s;
 }
 
 .main-topbar li{
@@ -541,6 +546,9 @@ p{
         opacity: 0;
     }
 }
+.left2{
+    display: none;
+}
 .left{
     position: relative;
     width: 1660px;
@@ -572,6 +580,7 @@ p{
         transform: scale(1);
     }
 }
+
 
 .deadspace2{
     margin-right: 50px;
@@ -785,6 +794,9 @@ p{
     }
 }
 /* 트레일러 */
+.T-m2{
+    display: none;
+}
 .trailer-bg{
     top: 700px;
     position: relative;
@@ -1359,4 +1371,548 @@ p{
     text-align: center;
     left: 0;right: 0;margin: auto;
     font-family: sans-serif;
+}
+
+
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+
+@media screen and (max-width:1285px){
+    .main-topbar-max{
+        position: fixed;
+        width: 100%;height: 70px;
+        left: 0;right: 0;margin: auto;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        animation: dis_on 1s ease-out forwards;
+        border-bottom: 1px solid white;
+        z-index: 1000;
+    }
+    @keyframes dis_on {
+        0%{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .main-topbar-max ul{
+        margin: 0;
+        list-style: none;
+    }
+    .main-topbar{
+        animation: dis_none 1s ease-out forwards;
+    }
+    @keyframes dis_none {
+        0%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
+    .logo1{
+        height: 150px;
+        left: 0;right: 0;margin: auto;
+        background-size: 200%;
+    }
+    /* 탑 바 메뉴 아이콘 */
+    .menu{
+        left: 10px;
+        top: 10px;
+        background-size: 200%;
+    }
+    /* 탑 바 사람 모양 아이콘 */
+    .user{
+        right: 10px;
+        top: 7px;
+        background-size: 70%;
+    }
+    .horver-p{
+        display: none;
+    }
+    .deadspace-text{
+        background-size: 150%;
+    }
+    .deadspace-text2{
+        background-size: 150%;
+    }
+    /* 메인박스2 */
+    .main-box1-bg{
+        width: 100%;
+    }
+    .main-box1{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+    }
+    .glass{
+        width: 100%;
+    }
+    
+    .game-buy{
+        width: 100%;
+        background-size: 120%;
+    }
+
+    .game-buy2{
+        width: 90%;
+        background-size: 120%;
+    }
+
+    .game-mprs{
+        width: 100%;
+        background-size: 120%;
+    }
+    .game-mprs2{
+        width: 100%;
+        background-size: 120%;
+    }
+    .buy{
+        top: 30%;
+        font-size: 100%;
+        background-size: 1000px;
+    }
+    .buy-text{
+        width: 100%;
+        top: 75%;
+    }
+    .left{
+        animation: off .3s ease-in-out forwards;
+    }
+    @keyframes off {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    .left2{
+        display: block;
+        position: relative;
+        top: 200px;
+    }
+    .deadspace1_2{
+        width: 100%;height: 30vh;
+        background: url(./jpg/deadspace1_2.png)no-repeat center;
+        background-size: cover;
+        left: 0;right: 0;margin: auto;
+    }
+    .deadspace1_2_2{
+        position: absolute;
+        width: 30%;height: 300px;
+        background: url(./jpg/deadspace1_2_2.png)no-repeat center;
+        background-size: 200%;
+        right: 50px;top: -30px;
+        animation: rightR 50s linear infinite;
+    }
+    @keyframes rightR {
+        0%{
+            transform: rotate(0)
+            translate(0);
+        }        
+        50%{
+            transform: rotate(180deg)
+            translateX(30px);
+        }
+        100%{
+            transform: rotate(360deg)
+            translate(0px);
+        }
+    }
+    .deadspace1-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace1-buy_2:active{
+        opacity: 1;
+    }
+    .box1_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .deadspace2_2{
+        width: 100%;height: 200px;
+        background: url(./jpg/deadspace2_2.png)no-repeat center;
+        background-size: cover;
+        left: 0;right: 0;margin: auto;
+    }
+    .deadspace2-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace2-buy_2:active{
+        opacity: 1;
+    }
+    .box2_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .deadspace3_2{
+        width: 100%;height: 200px;
+        background: url(./jpg/deadspace3_2.png)no-repeat center;
+        background-size: cover;
+    }
+    .deadspace3-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace3-buy_2:active{
+        opacity: 1;
+    }
+    .box3_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .welcome-text{
+        width: 100%;
+        background-size: 100%;
+        z-index: 100;
+        top: 400px;
+    }
+    .main-box2{
+        width: 100%;
+    }
+    .main-box-bg{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        background-size: 100%;
+        z-index: 2;
+    }
+    .main-box-bg h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 200%;
+    }
+    .main-box-bg h2{
+        margin-left: 0;
+        text-align: center;
+        font-size: 15px;
+        color: #ddd;
+    }
+    .re-box{
+        width: 100%;
+        background-size: 100%;
+        left: 0;right: 0;margin: auto;
+        z-index: 1;
+    }
+    .trailer-bg{
+        width: 100%;
+        height: 700px;
+    }
+    .trailer-box{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+    }
+    .T-m2{
+        position: absolute;
+        display: block;
+        width: 500px;
+        height: 280px;
+        left: 0;right: 0;margin: auto;
+    }
+    .T-m{
+        display: none;
+    }
+    .trailer-box h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        left: 0;right: 0;margin: auto;
+        top: -300px;
+    }
+    .main-box2-img{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0px;right: 0;margin: auto;
+        background: url(./jpg/배경1.png)no-repeat center;
+        background-size: cover;
+        top: 1000px;
+        opacity: 0;
+    }
+    @keyframes leftani {
+        0%{
+            opacity: 0;
+            transform: translateX(-65px)
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .main-box2-img-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        top: 750px;
+        opacity: 0;
+    }
+    @keyframes rightani {
+        0%{
+            opacity: 0;
+            transform: translateX(65px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .main-box2-img2{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/배경2.png)no-repeat center;
+        background-size: cover;
+        top: 880px;
+        opacity: 0;
+    }
+    .main-box2-img2-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        top: 550px;
+        opacity: 0;
+    }
+    .main-box2-img3{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0px;right: 0;margin: auto;
+        background: url(./jpg/배경3.png)no-repeat center;
+        background-size: cover;
+        top: 790px;
+        opacity: 0;
+    }
+    .main-box2-img3-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0px;right: 0;margin: auto;
+        text-align: center;
+        top: 500px;
+        opacity: 0;
+    }
+    .main-box2-img3-text h3{
+        color: #aaa;
+    }
+
+    .main-storybox h1{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: -100px;
+        font-size: 40px;
+    }
+    .main-storybox{
+        width: 100%;
+        top: 800px;
+    }
+    .main-storybox p{
+        color: #ccc;
+        font-size: 11px;
+    }
+    .story-box{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+    .story-box2{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+    .story-box3{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+
+    .story-btn{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 400px;
+    }
+    .story-btn h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .story-btn2{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 450px;
+    }
+    .story-btn2 h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .story-btn3{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 500px;
+    }
+    .story-btn3 h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .main-box3{
+        width: 100%;
+    }
+    .screenshot-text{
+        top: -700px;
+    }
+    .slide-box{
+        top: -500px;
+        width: 100%; height: 1000px;
+    }
+    .slide-con{
+        transition: none;
+    }
+    .screenshot{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transition: none;
+    }
+    .screenshot2{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(500px);
+    }
+    .screenshot3{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(1000px);
+    }
+    .screenshot4{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(1500px);
+    }
+    .screenshot5{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(2000px);
+    }
+    .screenshot6{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(2500px);
+    }
+    .screenshot7{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(3000px);
+    }
+    .screenshot8{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(3500px);
+    }
+    .screenshot9{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(4000px);
+    }
+    .screenshot10{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(4500px);
+    }
+    .screenshot11{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(5000px);
+    }
+    .screenshot12{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(5500px);
+    }
+    .screen-btn{
+        top: 0px;
+    }
+    .screen-btn button{
+        width: 100px;height: 100px;
+    }
+    .screen-btn2{
+        top: 100px;
+    }
+    .screen-btn2 button{
+        width: 100px;height: 100px;
+    }  
+    .ea-deadspace-logo{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/ea_deadspace.png)no-repeat center;
+        background-size: cover;
+        width: 100%;height: 700px;
+        top: -50px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .ea-deadspace-logo-text{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        color: white;
+        top: 400px;
+        z-index: 1;
+        font-size: 20px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .main-box4-btn{
+        top: 800px;
+    }
+    .social-box ul li{
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .csc ul li{
+        margin-left: 0px;
+    }
 }

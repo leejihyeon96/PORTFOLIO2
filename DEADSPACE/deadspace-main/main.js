@@ -122,12 +122,14 @@ let box2ani3_2 = document.querySelector('.main-box2-img3-text');
 let eaani1 = document.querySelector('.ea-deadspace-logo');
 let eaani2 = document.querySelector('.ea-deadspace-logo-text');
 let eaani3 = document.querySelector('.main-box4-btn');
-
+let test = document.querySelector('.left');
 
 
 window.addEventListener('scroll',function(){
  var value = window.scrollY;
  console.log('scrollY',value);
+
+
 
 
 if (value > 600){
@@ -145,6 +147,7 @@ if (value > 1700) {
     scaleani2.style.animation = "scalexy 0.3s linear";
     scaleani3.style.display = "inline-block";
     scaleani3.style.animation = "scalexy 0.3s linear";
+
 }
 if (value > 1900){
     scrollani3.style.animation = "on4 0.3s linear";
