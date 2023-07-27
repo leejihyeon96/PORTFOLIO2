@@ -1327,7 +1327,7 @@ html{
     left: 400px;right: 0;margin: auto;
     top: 300px;
     width: 1200px; height: 1000px;
-    background: url(../jpg/음악플레이어UI목업2.jpg)no-repeat center;
+    background: url(./jpg/음악플레이어UI목업2.jpg)no-repeat center;
     background-size: cover;
     opacity: 0;
 }
